@@ -18,6 +18,18 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/vendor.css">
 
+    <style type="text/css" media="screen">
+        .s-styles { 
+            background-color: var(--color-bg);
+            padding-top: calc(6.5 * var(--space));
+            padding-bottom: calc(4.5 * var(--space));
+            position: relative;
+        }
+        .s-styles .intro h1 {
+            margin-top: 0;
+        }
+    </style>
+
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -35,13 +47,10 @@
 <body id="top">
 
 
-    <!-- preloader
+    <!-- Dots fade
     ================================================== -->
     <div id="preloader">
         <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
         </div>
     </div>
 
@@ -49,15 +58,12 @@
     <!-- header
     ================================================== -->
     <header class="s-header">
-
         <div class="s-header__logo">
             <a href="index.html">
                 <img src="images/Logoo.png" alt="Homepage">
             </a>
         </div>
-
         <div class="s-header__content">
-    
             <nav class="s-header__nav-wrap">
                 <ul class="s-header__nav">
                     <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
@@ -65,50 +71,39 @@
                     <li><a class="smoothscroll" href="#portfolio" title="Works">Projects</a></li>
                 </ul>
             </nav> <!-- end s-header__nav-wrap -->
-
             <a href="mailto:bahrcr7@gmail.com" class="btn btn--primary btn--small">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
                 Get In Touch
             </a>
-
         </div> <!-- end header-content -->
-
         <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-
     </header> <!-- end s-header -->
 
 
     <!-- hero
     ================================================== -->
     <section id="hero" class="s-hero target-section">
-
         <div class="s-hero__bg">
             <div class="gradient-overlay"></div>
         </div>
-
         <div class="row s-hero__content">
             <div class="column">
-
                 <h1>Hey, I'm Adam</h1>
                 <h3>I'm a <span class="auto-type"></span> </h3>
             </div>
-
             <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
             <script>
                 var typed = new Typed(".auto-type",{
-                    strings : ["Programmer", "Graphic Design", "Web Developer", "Developer", "Web Designer", "Script Writer"],
+                    strings : ["Programmer", "Web Developer", "Developer", "Full Stack", "Script Writer"],
                     typeSpeed : 160,
                     backSpeed: 15,
                     loop : true
                 })
             </script>
                 <div class="s-hero__content-about">
-                    
                     <p>
                     I use animation to simplify user experiences and guide interactions.<br>
                     </p>
-    
                     <footer>
                         <div class="s-hero__content-social">
                             <a href="https://www.facebook.com/profile.php?id=100010085502220&sk=grid"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
@@ -119,86 +114,157 @@
                         </div>
                     </footer>
                 </div>
-
             </div>
         </div>
-
         <div class="s-hero__scroll">
-            <a href="#about" class="s-hero__scroll-link smoothscroll">
+            <a href="#styles" class="s-hero__scroll-link smoothscroll">
                 Scroll Down
             </a>
         </div>
-
     </section> <!-- end s-hero -->
 
 
     <!-- about
     ================================================== -->
     <section id="about" class="s-about">
-
         <div class="horizontal-line"></div>
-
         <div class="row">
             <div class="column large-12">
-
                 <div class="section-title" data-num="01" data-aos="fade-up">
                     <h3 class="h6">Who I'm</h3>
                 </div>
-
             </div>
-
             <div class="column large-6 w-900-stack s-about__intro-text">
                 <h1 class="display-1" data-aos="fade-up">
                     Dedicated Software Engineer with a strong foundation in full-stack development and project management. Seeking a challenging role to apply skills and contribute to innovative software solutions.
                 </h1>
-
                 <p class="lead" data-aos="fade-up">
                     I am a dedicated Software Engineering student at ALX Academy, with expertise in full-stack development, project management, and problem-solving. DTU has honed my IT skills in software development, networking, and database management. Passionate about tech trends, I seek challenging roles to innovate with cutting-edge software. Website designer and developer specializing in user-friendly animations for enhanced interactions. 
                 </p>
             </div>
-
             <div class="column large-6 w-900-stack s-about__photo-block">
                 <div class="s-about__photo" data-aos="fade-up"></div>
             </div>
+            <div class="row block-large-1-2 block-tab-full s-about__process item-list">
+                <div class="column item item-process" data-aos="fade-up">
+                    <h3 class="item-title">Define</h3>
+                    <p>
+                        Driven by a passion for continuous learning and growth, I aspire to contribute to dynamic teams that push the boundaries of technology innovation, creating impactful solutions in the ever-evolving tech landscape my focus is on innovative software solutions that integrate the latest tech trends. Actively seeking challenging roles to apply my technical skills and collaborate on cutting-edge projects.
+                    </p>
+                </div>
+                <div class="column item item-process" data-aos="fade-up">
+                    <h3 class="item-title">Design</h3>
+                    <p>
+                        I specialize in user-friendly website design and software development enriched with interactive animations  I will artistically craft the blueprint for innovative software solutions, integrating user-centric design principles with cutting-edge technologies. This segment will showcase my ability to create intuitive interfaces, engaging user experiences, and visually appealing software products that prioritize functionality and aesthetics.
+                    </p>
+                </div>
+                <div class="column item item-process" data-aos="fade-up">
+                    <h3 class="item-title">Build</h3>
+                    <p>
+                        bring a blend of creativity and technical acumen to simplify user experiences and elevate software interactions.
+                    </p>
+                </div>
+                <div class="column item item-process" data-aos="fade-up">
+                    <h3 class="item-title">Launch</h3>
+                    <p>
+                        I will detail the practical application of my skills and knowledge to initiate and propel projects forward. This segment will showcase my ability to execute plans effectively, manage resources efficiently, and bring innovative software solutions to life.
+                    </p>
+                </div>
+            </div>
+            <div class="column large-6 tab-12 align-center" data-aos="fade-up">
+                <h3 class="h-add-bottom align-center">Skills</h3>
+                <ul class="skill-bars align-center">
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>HTML</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>CSS</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>Javascript</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent80"><span>80%</span></div>
+                    <strong>Python</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>C++</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent95"><span>95%</span></div>
+                    <strong>React JS</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent80"><span>80%</span></div>
+                    <strong>MongoDB</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent65"><span>65%</span></div>
+                    <strong>MySQL</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent80"><span>90%</span></div>
+                    <strong>Node JS</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>Express JS</strong>
+                    </li>
+                    <li>
+                    <div class="progress percent85"><span>85%</span></div>
+                    <strong>Flask</strong>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="row block-large-1-2 block-tab-full s-about__process item-list">
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Define</h3>
-                <p>
-                    Driven by a passion for continuous learning and growth, I aspire to contribute to dynamic teams that push the boundaries of technology innovation, creating impactful solutions in the ever-evolving tech landscape my focus is on innovative software solutions that integrate the latest tech trends. Actively seeking challenging roles to apply my technical skills and collaborate on cutting-edge projects.
-                </p>
+        
+        <div class="container">
+            <h3 class="h-add-bottom align-center" data-aos="fade-up">Timeline</h3>
+            <div class="single-box" data-aos="fade-up">
+                
+                <div class="custom"></div>
+                <div class="date-area">
+                    <span>2023</span>
+                </div>
+                <div class="content">
+                    <h2></h2>
+                    <h3>Information Technology Student </h3>
+                </div>
             </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Design</h3>
-                <p>
-                    I specialize in user-friendly website design and software development enriched with interactive animations  I will artistically craft the blueprint for innovative software solutions, integrating user-centric design principles with cutting-edge technologies. This segment will showcase my ability to create intuitive interfaces, engaging user experiences, and visually appealing software products that prioritize functionality and aesthetics.
-                </p>
+            <div class="single-box box-right" data-aos="fade-up">
+                <div class="custom"></div>
+                <div class="date-area">
+                    <span>2023</span>
+                </div>
+                <div class="content">
+                    <h2></h2>
+                    <h3>Software<br> Engineering at <a href="https://www.alxafrica.com/"> ALX</a></h3>
+                    
+                </div>
             </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Build</h3>
-                <p>
-                    bring a blend of creativity and technical acumen to simplify user experiences and elevate software interactions.
-                </p>
+            <div class="single-box" data-aos="fade-up">
+                <div class="custom"></div>
+                <div class="date-area">
+                    <span>2024</span>
+                </div>
+                <div class="content">
+                    <h2></h2>
+                    <h3>build <a href="https://a-fit.netlify.app/"> AFit</a></h3>
+                    <p>Fitness Tracker Website</p>
+                </div>
             </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Launch</h3>
-                <p>
-                    I will detail the practical application of my skills and knowledge to initiate and propel projects forward. This segment will showcase my ability to execute plans effectively, manage resources efficiently, and bring innovative software solutions to life.
-                </p>
-            </div>
-            
         </div>
-
     </section> <!-- end s-about -->
 
 
     <!-- services
     ================================================== -->
-    <!-- end s-services -->
-
     <section id="portfolio" class="s-portfolio">
-
         <div class="row s-porfolio__top">
             <div class="column large-6 w-900-stack">
                 <div class="section-title" data-num="02" data-aos="fade-up">
@@ -211,7 +277,6 @@
                 </h1>
             </div>
         </div> <!-- end s-portfolio__top-->
-
         <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
             <div class="column" data-aos="fade-up">
                 <div class="folio-item">
@@ -231,30 +296,20 @@
                     </div>
                 </div>
             </div>
-
-            </div><!-- end column -->
-
-        </div>
-        <!-- folio-list -->
-
+        </div><!-- end column -->
     </section> <!-- end s-portfolio -->
 
-    
 
-
-    <!-- clients
+    <!-- Social media
     ================================================== -->
     <div id="clients" class="section s-clients">
-
         <div class="row narrower s-clients__top h-text-center">
             <div class="column">
             </div>
-        </div> <!-- s-clients__top -->
-
+        </div> <!-- s-Social__top -->
         <div class="row clients-outer">
             <div class="column">
                 <div class="clients" data-aos="fade-up">
-                    
                     <a href="https://www.facebook.com/profile.php?id=100010085502220&sk=grid" title="facebook" class="clients__slide"><img src="images/icons/clients/facebook.svg" /></a>
                     <a href="https://x.com/AdamB7r?s=09" title="X" class="clients__slide"><img src="images/icons/clients/twitter.svg" /></a>
                     <a href="https://github.com/adamb7rr/" title="github" class="clients__slide"><img src="images/icons/clients/github.svg" /></a>
@@ -270,64 +325,53 @@
                 </div> <!-- end clients -->
             </div> <!-- end column -->
         </div> <!-- end clients-outer -->
+        <div class="row h-add-half-bottom">
+        </div>
 
 
         <div class="row testimonials collapse">
-
             <div class="column large-12">
-
                 <div class="testimonial-slider" data-aos="fade-up">
-
                     <div class="testimonial-slider__slide">
                         <p>
                             I'm a dedicated Software Engineering student at ALX Academy, currently pursuing a 12-month program. With a strong foundation in full-stack development, project management, and problem-solving, I'm eager to leverage my skills to contribute to innovative software solutions.
-
                             My experience at Delta Technology University (DTU) has equipped me with a solid understanding of information technology principles, including software development, networking, and database management. I'm passionate about staying updated with the latest tech trends and exploring new opportunities for growth.
-                            
                             I'm actively seeking a challenging role where I can apply my technical skills and collaborate with talented teams to develop cutting-edge software products.
                         </p>
                         <div class="testimonial-slider__author">
                             <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
                             <cite class="testimonial-slider__cite">
                                 <strong>Adam b7r</strong>
-                                <span>Freelancer</span>
+                                <span>Full Stack</span>
                             </cite>
                         </div>
                     </div> <!-- end testimonials__slide -->
-
                 </div> <!-- end testimonial slider -->
-                
             </div> <!-- end column -->
-
         </div> <!-- end row -->
-
-
     </div> <!-- end s-clients -->
 
 
     <!-- contact
     ================================================== -->
     <section class="s-contact">
-
-        <div class="row narrower s-contact__top h-text-center">
+        <div class="row narrower s-contact__top h-text-center" data-aos="fade-up">
             <div class="column">
-                <h3 class="h6">Get In Touch</h3>
                 <h1 class="display-1">
                 Have an idea or an epic project in mind?<br>
                 Let us work together and make something great.
                 Send me a message at
                 </h1>
             </div>
-        </div> <!-- s-footer__top -->
-
-        <div class="row h-text-center">
-            <div class="column">
-                <p class="s-contact__email">
-                    <a href="mailto:bahrcr7@gmail.com">📧</a>
-                </p>
+            <div class="column large-6 laarge-6" data-aos="fade-up">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="h-full-width">
+                        <input type="hidden" name="access_key" value="b941086f-4867-4e11-b6ac-9c808aa177bc">
+                        <input type="text" name="name" required placeholder="Your Name" class="h-full-width">
+                        <input type="email" name="email" required placeholder="Your Email" class="h-full-width">
+                        <textarea class="h-full-width" name="message" required placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
             </div>
-        </div>
-
     </section>  <!-- end s-contact -->
 
 
@@ -335,22 +379,18 @@
     ================================================== -->
     <footer class="s-footer">
         <div class="row row-y-top">
-
             <div class="column large-8 medium-12">
                 <div class="row">
                     <div class="column large-7 tab-12 s-footer__block">
                         <h4 class="h6">Location</h4>
-        
                         <p>
                         Cairo, <br>
                         Egypt <br>
                         <a href="tel:20120 548 4798">+20120 548 4798</a>
                         </p>
                     </div>
-        
                     <div class="column large-5 tab-12 s-footer__block">
                         <h4 class="h6">Follow Us</h4 class="h6">
-        
                         <ul class="s-footer__list">
                             <li><a href="https://www.facebook.com/profile.php?id=100010085502220&sk=grid">Facebook</a></li>
                             <li><a href="https://x.com/AdamB7r?s=09">Twitter</a></li>
@@ -359,34 +399,28 @@
                     </div>
                 </div>
             </div>
-
             <div class="column large-4 medium-12 s-footer__block--end">
                 <a href="mailto:bahrcr7@gmail.com" class="btn h-full-width">Let's Talk</a>
             </div>
-
             <div class="ss-go-top">
                 <a class="smoothscroll" title="Back to Top" href="#top">
                     top
                 </a>
             </div> <!-- end ss-go-top -->
-
         </div>
     </footer>
-    
+
 
     <!-- photoswipe background
     ================================================== -->
     <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
         <div class="pswp__bg"></div>
         <div class="pswp__scroll-wrap">
-
             <div class="pswp__container">
                 <div class="pswp__item"></div>
                 <div class="pswp__item"></div>
                 <div class="pswp__item"></div>
             </div>
-
             <div class="pswp__ui pswp__ui--hidden">
                 <div class="pswp__top-bar">
                     <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
@@ -408,9 +442,7 @@
                     <div class="pswp__caption__center"></div>
                 </div>
             </div>
-
         </div>
-
     </div> <!-- end photoSwipe background -->
 
 
@@ -421,5 +453,4 @@
     <script src="js/main.js"></script>
 
 </body>
-
 </html>

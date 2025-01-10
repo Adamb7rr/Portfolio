@@ -4755,6 +4755,10 @@ html.no-csstransitions .s-hero__content {
     list-style: none;
     margin-left: 0;
 }
+.s-footer__list li a:hover {
+    font-size: large;
+    color: #000;
+}
 
 .s-footer__list li {
     padding-left: 0;

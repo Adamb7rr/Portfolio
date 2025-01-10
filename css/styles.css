@@ -3989,7 +3989,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-    background-image: url(../images/about-photo.jpg);
+    background-image: url(../images/Adambahr.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3999,7 +3999,6 @@ html.no-csstransitions .s-hero__content {
     left: var(--gutter-lg);
     bottom: var(--vspace-1);
 }
-
 
 /* ------------------------------------------------------------------- 
  * ## about process

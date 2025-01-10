@@ -4839,6 +4839,19 @@ html.no-csstransitions .s-hero__content {
     transform: scale(1);
 }
 
+/* custom scrollbar */
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: var(--color-1-light);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color-2-light);
+    border-radius: 10px;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:

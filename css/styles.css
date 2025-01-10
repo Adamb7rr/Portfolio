@@ -3306,6 +3306,11 @@ input::-moz-focus-inner {
         right: 6rem;
     }
 }
+@media screen and (max-width: 470px) {
+    .mes {
+        width: 2px;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .s-header__nav-wrap {

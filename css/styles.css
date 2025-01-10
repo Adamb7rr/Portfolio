@@ -898,6 +898,7 @@ textarea {
 	height: 70px;
 	border-radius: 50%;
     color: #ffffff;
+    transform: translateX(-2px);
 }
 .content {
 	text-align: center;

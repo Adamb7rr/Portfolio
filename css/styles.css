@@ -4845,11 +4845,13 @@ html.no-csstransitions .s-hero__content {
     width: 15px;
 }
 ::-webkit-scrollbar-track{
-    background: var(--color-1-light);
+    background: #EEE;
 }
 ::-webkit-scrollbar-thumb{
-    background: var(--color-2-light);
-    border-radius: 10px;
+    background: var(--color-1);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--color-1-light);
 }
 
 
